@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "2024",
+    title: "Desarrollador de Software Full Stack",
+    company: "Cruz Roja Colombiana Seccional Cesar",  
+    description:
+      "Desarrollé un sistema web para la gestión de mantenimientos y documentación de vehículos. El sistema permite registrar información detallada de los vehículos, programar mantenimientos, y recibir alertas sobre vencimientos de documentos y servicios de mantenimiento. Mejora la eficiencia en la planificación de tareas de mantenimiento, optimizando el uso de los recursos de la organización.",
+    link: "https://example.com/proyecto-mantenimiento-vehiculos", // Puedes usar un enlace si tienes un portafolio o repo
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Principal Frontend Engineer",
+    company: "Adevinta Spain",
+    description:
+      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+  },
+  {
+    date: "Febrero 2021 - Actualmente...",
+    title: "Desarrollador Full Stack",
+    company: "Freelance",
+    description:
+      "Desarrollador Full Stack con más de 3 años de experiencia en la creación de soluciones de software modernas y eficientes. Especializado en tecnologías como ASP.NET Core (versiones 6, 7 y 8) para el backend, SQL Server para la gestión y modelado de bases de datos, y Angular para la construcción de interfaces de usuario interactivas y dinámicas en el frontend. He desarrollado proyectos completos, desde la arquitectura de APIs RESTful seguras y escalables hasta aplicaciones web responsivas, garantizando una experiencia de usuario intuitiva. Mi experiencia abarca desde soluciones empresariales hasta sistemas personalizados, entregando siempre código limpio y orientado a buenas prácticas.",
+    link: "https://example.com/portafolio", // Cambia el enlace si tienes portafolio o proyecto destacado.
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
